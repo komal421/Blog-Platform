@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blogging Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container" id="login-page">
+  <h2>Login to Your Account</h2>
+  <input type="text" placeholder="Username" id="username" />
+  <input type="password" placeholder="Password" id="password" />
+  <button onclick="login()">Login</button>
+</div>
+
+<div id="blog-page">
+  <h2>Welcome! Share Your Post</h2>
+  <textarea id="postText" rows="3" placeholder="Write something..."></textarea>
+  <input type="file" id="mediaUpload" accept="image/*,video/*">
+  <button onclick="createPost()">Post</button>
+  <hr>
+  <div id="posts"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
